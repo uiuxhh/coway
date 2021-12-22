@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- 퍼블리싱 테스트용입니다. 퍼블리싱 작업완료 후 삭제합니다. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!-- /퍼블리싱 테스트용입니다. 퍼블리싱 작업완료 후 삭제합니다. -->
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1 class="header__logo">
+				<a href="/"><img src="images/logo.svg" alt="코웨이 인증점"></a>
+			</h1>
+			<div class="mobile-topmenu">
+				<button class="mobile-topmenu__drawer-opener">전체메뉴</button>
+				<a class="mobile-topmenu__call" href="tel:010-0000-0000">전화상담하기</a>
+			</div>
+			<div class="pc-topmenu">
+				<div class="pc-topmenu__call">
+					<p>상담신청</p><b>010-1234-5678</b>
+				</div>
+			</div>
+			<div class="header__gnb">
+				<ul class="header__gnb__depth1">
+					<li><a href="product_list_01.html">제품</a></li>
+					<li><a href="gift.html">사은품</a></li>
+					<li class=""><a href="card.html">카드할인</a></li>
+					<li><a href="counsel_write.html">상담신청</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="mobile-drawer">
+			<ul class="mobile-drawer__depth1">
+				<li><a href="/">홈</a></li>
+				<li>
+					<a href="product_list_01.html">제품</a>
+					<ul class="mobile-drawer__depth2">
+						<li><a href="product_list_01.html">정수기</a></li>
+						<li><a href="product_list_02.html">청정기</a></li>
+						<li><a href="product_list_03.html">비데</a></li>
+				</li>
+				<li><a href="gift.html">사은품</a></li>
+				<li class="card.html"><a href="">카드할인</a></li>
+				<li><a href="counsel_write.html">상담신청</a></li>
+			</ul>
+		</div>
+		
+		<div class="fixedbar-wrap">
+			<div class="pc-sidebar">
+				<div class="pc-sidebar__call-number">
+					<b>010-1234-5678</b>
+					<p>빠른 문의하기</p>
+				</div>
+				<div class="pc-sidebar__counsel-link">
+					<a href="counsel_write.html">상담신청</a>
+				</div>
+			</div>
+			<div class="mobile-bottombar">
+				<div class="mobile-bottombar__call-number">
+					<a href="tel:010-0000-0000">
+						<b>010-1234-5678</b>
+						<p>빠른 문의하기</p>
+					</a>
+				</div>
+				<div class="mobile-bottombar__counsel-link">
+					<a href="counsel_write.html">상담신청하기</a>
+				</div>
+				<!-- <div class="mobile-bottombar__product-counsel-link">
+					<a href="product-counsel_write.html">선택한 옵션으로 상담신청하기</a>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="container">
+			<section class="visual">
+				<ul class="visual__slider">
+					<li><a href="product_detail_0101.html">
+						<img class="pc-visual__slider--item" src="pc_visual_slider_item_01.jpg" alt="">
+						<img class="mobile-visual__slider--item" src="mobile_visual_slider_item_01.jpg" alt="">
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<img class="pc-visual__slider--item" src="pc_visual_slider_item_01.jpg" alt="">
+						<img class="mobile-visual__slider--item" src="mobile_visual_slider_item_01.jpg" alt="">
+					</a></li>
+				</ul>
+				<div class="visual__control">
+					<div class="visual__control__pager"></div>
+					<div class="visual__control__arrow">
+						<button class="visual__control__arrow--prev">이전</button>
+						<button class="visual__control__arrow--next">다음</button>
+					</div>
+				</div>
+			</section>
+			<section class="main-best-product">
+				<h2 class="main-best-product__title">BEST 제품</h2>
+				<ul>
+					<li><a href="product_detail_0101.html">
+						
+					</a></li>
+				</ul>
+			</section>
+			<section class="main-banner">
+				<ul>
+					<li><a href="">
+						<img src="pc_main_banner_01.jpg" alt="" class="pc-main-banner__img">
+						<img src="mobile_main_banner_01.jpg" alt="" class="mobile-main-banner__img">
+					</a></li>
+					<li><a href="">
+						<img src="pc_main_banner_02.jpg" alt="" class="pc-main-banner__img">
+						<img src="mobile_main_banner_02.jpg" alt="" class="mobile-main-banner__img">
+					</a></li>
+					<li><a href="">
+						<img src="pc_main_banner_03.jpg" alt="" class="pc-main-banner__img">
+						<img src="mobile_main_banner_03.jpg" alt="" class="mobile-main-banner__img">
+					</a></li>
+				</ul>
+			</section>
+			<section class="main-recommend-product">
+				<h2 class="main-recommend-product__title">추천제품</h2>
+				<ul class="product-list--global">
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<span class="sticker-item--hotprice"></span>
+								<span class="sticker-item--exemption"></span>
+								<span class="sticker-item--refurb"></span>
+								<span class="sticker-item--groupdiscount"></span>
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<span class="sticker-item--coldwater"></span>
+								<span class="sticker-item--hotwater"></span>
+								<span class="sticker-item--purewater"></span>
+								<span class="sticker-item--ice"></span>
+								<span class="sticker-item--tansan"></span>
+							</span>
+							<img src="" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<span class="sticker-item--hotprice"></span>
+								<!-- <span class="sticker-item--exemption"></span> -->
+								<!-- <span class="sticker-item--refurb"></span> -->
+								<!-- <span class="sticker-item--groupdiscount"></span> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<span class="sticker-item--coldwater"></span>
+								<span class="sticker-item--hotwater"></span>
+								<span class="sticker-item--purewater"></span>
+								<!-- <span class="sticker-item--ice"></span> -->
+								<!-- <span class="sticker-item--tansan"></span> -->
+							</span>
+							<img src="" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+				</ul>
+				<a href="product_list_01.html" class="main-recommend-product__readmore">제품 더보기</a>
+			</section>
+		</div>
+
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+</html>
