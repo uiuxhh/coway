@@ -12,10 +12,31 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-	<title>Document</title>
+	<title>코웨이 인증점</title>
 
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			containerSizeCheck();
+			$('.mobile-topmenu__drawer-opener').click(function(){
+				$('.wrapper').toggleClass('drawer-open');
+			});
+		});
+		$(window).resize(function(){
+			containerSizeCheck();
+		});
+		function containerSizeCheck(){
+			$('.container').css('margin-top',$('header').outerHeight());
+			if($(window).outerWidth()<=768){
+				$('.wrapper').addClass('mobile');
+			}else{
+				$('.wrapper').removeClass('mobile').removeClass('drawer-open');
+			}
+		}
+	</script>
 
 	<!-- 퍼블리싱 테스트용입니다. 퍼블리싱 작업완료 후 삭제합니다. -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -25,42 +46,47 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<h1 class="header__logo">
-				<a href="/"><img src="./images/header_logo.png" alt="코웨이 인증점"></a>
-			</h1>
-			<div class="mobile-topmenu">
-				<button class="mobile-topmenu__drawer-opener">전체메뉴</button>
-				<a class="mobile-topmenu__call" href="tel:010-0000-0000">전화상담하기</a>
-			</div>
-			<div class="pc-topmenu">
-				<div class="pc-topmenu__call">
-					<p>상담신청</p><b>010-1234-5678</b>
+			<div class="header__inner">
+				<h1 class="header__logo">
+					<a href="/"><img src="./images/header_logo.png" alt="코웨이 인증점"></a>
+				</h1>
+				<div class="mobile-topmenu">
+					<button class="mobile-topmenu__drawer-opener">전체메뉴</button>
+					<a class="mobile-topmenu__call" href="tel:010-0000-0000">전화상담하기</a>
 				</div>
-			</div>
-			<div class="header__gnb">
-				<ul class="header__gnb__depth1">
-					<li><a href="product_list_01.html">제품</a></li>
-					<li><a href="gift.html">사은품</a></li>
-					<li class=""><a href="card.html">카드할인</a></li>
-					<li><a href="counsel_write.html">상담신청</a></li>
-				</ul>
+				<div class="pc-topmenu">
+					<div class="pc-topmenu__call">
+						<p>상담신청</p><b>010-1234-5678</b>
+					</div>
+				</div>
+				<div class="header__gnb">
+					<ul class="header__gnb__depth1">
+						<li><a href="product_list_01.html">제품</a></li>
+						<li><a href="gift.html">사은품</a></li>
+						<li class="header__gnb__tooltip"><a href="card.html">카드할인</a></li>
+						<li><a href="counsel_write.html">상담신청</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
 
 		<div class="mobile-drawer">
-			<ul class="mobile-drawer__depth1">
-				<li><a href="/">홈</a></li>
-				<li>
-					<a href="product_list_01.html">제품</a>
-					<ul class="mobile-drawer__depth2">
-						<li><a href="product_list_01.html">정수기</a></li>
-						<li><a href="product_list_02.html">청정기</a></li>
-						<li><a href="product_list_03.html">비데</a></li>
-				</li>
-				<li><a href="gift.html">사은품</a></li>
-				<li class="card.html"><a href="">카드할인</a></li>
-				<li><a href="counsel_write.html">상담신청</a></li>
-			</ul>
+			<div class="mobile-drawer__inner">
+				<ul class="mobile-drawer__depth1">
+					<li><a href="/">홈</a></li>
+					<li>
+						<a href="product_list_01.html">제품</a>
+						<ul class="mobile-drawer__depth2">
+							<li><a href="product_list_01.html">정수기</a></li>
+							<li><a href="product_list_02.html">청정기</a></li>
+							<li><a href="product_list_03.html">비데</a></li>
+						</ul>
+					</li>
+					<li><a href="gift.html">사은품</a></li>
+					<li class="card.html"><a href="">카드할인</a></li>
+					<li><a href="counsel_write.html">상담신청</a></li>
+				</ul>
+			</div>
 		</div>
 		
 		<div class="fixedbar-wrap">
@@ -90,15 +116,15 @@
 		</div>
 
 		<div class="container">
-			<section class="visual">
+			<section class="visual" style="display: none">
 				<ul class="visual__slider">
 					<li><a href="product_detail_0101.html">
-						<img class="pc-visual__slider--item" src="pc_visual_slider_item_01.jpg" alt="">
-						<img class="mobile-visual__slider--item" src="mobile_visual_slider_item_01.jpg" alt="">
+						<img class="pc-visual__slider--item" src="./images/pc_visual_slider_item_01.jpg" alt="">
+						<img class="mobile-visual__slider--item" src="./images/mobile_visual_slider_item_01.jpg" alt="">
 					</a></li>
 					<li><a href="product_detail_0101.html">
-						<img class="pc-visual__slider--item" src="pc_visual_slider_item_01.jpg" alt="">
-						<img class="mobile-visual__slider--item" src="mobile_visual_slider_item_01.jpg" alt="">
+						<img class="pc-visual__slider--item" src="./images/pc_visual_slider_item_01.jpg" alt="">
+						<img class="mobile-visual__slider--item" src="./images/mobile_visual_slider_item_01.jpg" alt="">
 					</a></li>
 				</ul>
 				<div class="visual__control">
@@ -120,16 +146,16 @@
 			<section class="main-banner">
 				<ul>
 					<li><a href="">
-						<img src="pc_main_banner_01.jpg" alt="" class="pc-main-banner__img">
-						<img src="mobile_main_banner_01.jpg" alt="" class="mobile-main-banner__img">
+						<img src="./images/pc_main_banner_01.jpg" alt="" class="pc-main-banner__img">
+						<img src="./images/mobile_main_banner_01.jpg" alt="" class="mobile-main-banner__img">
 					</a></li>
 					<li><a href="">
-						<img src="pc_main_banner_02.jpg" alt="" class="pc-main-banner__img">
-						<img src="mobile_main_banner_02.jpg" alt="" class="mobile-main-banner__img">
+						<img src="./images/pc_main_banner_02.jpg" alt="" class="pc-main-banner__img">
+						<img src="./images/mobile_main_banner_02.jpg" alt="" class="mobile-main-banner__img">
 					</a></li>
 					<li><a href="">
-						<img src="pc_main_banner_03.jpg" alt="" class="pc-main-banner__img">
-						<img src="mobile_main_banner_03.jpg" alt="" class="mobile-main-banner__img">
+						<img src="./images/pc_main_banner_03.jpg" alt="" class="pc-main-banner__img">
+						<img src="./images/mobile_main_banner_03.jpg" alt="" class="mobile-main-banner__img">
 					</a></li>
 				</ul>
 			</section>
@@ -151,7 +177,7 @@
 								<span class="sticker-item--ice"></span>
 								<span class="sticker-item--tansan"></span>
 							</span>
-							<img src="" alt="" class="product-list__thumbnail">
+							<img src="./images/" alt="" class="product-list__thumbnail">
 						</span>
 						<span class="product-list__info">
 							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
@@ -178,7 +204,7 @@
 								<!-- <span class="sticker-item--ice"></span> -->
 								<!-- <span class="sticker-item--tansan"></span> -->
 							</span>
-							<img src="" alt="" class="product-list__thumbnail">
+							<img src="./images/" alt="" class="product-list__thumbnail">
 						</span>
 						<span class="product-list__info">
 							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
@@ -193,12 +219,27 @@
 				</ul>
 				<a href="product_list_01.html" class="main-recommend-product__readmore">제품 더보기</a>
 			</section>
+			<section class="main-service">
+				<div class="main-service__call-number">
+					<p>신규 고객을 위한 렌탈 가입문의</p>
+					<b>010-1234-5678</b>
+				</div>
+				<div class="main-service__info">
+					평일 09:30 ~ 18:30<br>
+					점심 12:30 ~ 13:30<br>
+					ARS 상담예약 상시운영
+				</div>
+			</section>
 		</div>
 
-
-
 		<footer>
-			
+			<div class="footer__inner">
+				<h2 class="footer__logo">
+					<a href="/"><img src="./images/footer_logo.png" alt="코웨이 인증점"></a>
+				</h2>
+				<div class="footer__call"><p>상담신청</p><b>010-1234-5678</b></div>
+				<div class="footer__copyright">copyrigt ⓒ coway공식인증점 all rights reserved.</div>
+			</div>
 		</footer>
 	</div>
 </body>
