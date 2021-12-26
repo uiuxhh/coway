@@ -4,19 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<!-- <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
 	<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
 
 	<title>코웨이 인증점</title>
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
 
 	<script>
 		$(document).ready(function(){
@@ -24,9 +26,45 @@
 			$('.mobile-topmenu__drawer-opener').click(function(){
 				$('.wrapper').toggleClass('drawer-open');
 			});
+			mainVisual = $('.visual__slider').bxSlider({
+				responsive:true,
+				auto:true,
+				controls:true,
+				pager:true,
+				pagerSelector:'.visual__control__pager',
+				prevSelector:'.visual__control__arrow--prev',
+				nextSelector:'.visual__control__arrow--next',
+				pause:4000,
+				speed:1000,
+				nextText:'',
+				prevText:'',
+				onSliderLoad:function(){
+					$('.visual__slider li').eq(1).addClass('active-slide');
+				},
+				onSlideBefore:function(){
+					var currentslide = mainVisual.getCurrentSlide();
+					console.log(currentslide);
+					$('.visual__slider li').removeClass('active-slide');
+					$('.visual__slider li').eq(currentslide + 1).addClass('active-slide');
+				}
+			});
+			$('.main-best-product__item').mouseenter(function(){
+				if($(window).outerWidth()>1230){
+					$('.main-best-product__item').removeClass('on');
+					$(this).addClass('on');
+				}
+			});
+			
 		});
 		$(window).resize(function(){
 			containerSizeCheck();
+
+			$('.main-best-product__item').mouseenter(function(){
+				if($(window).outerWidth()>1230){
+					$('.main-best-product__item').removeClass('on');
+					$(this).addClass('on');
+				}
+			});
 		});
 		function containerSizeCheck(){
 			$('.container').css('margin-top',$('header').outerHeight());
@@ -116,7 +154,7 @@
 		</div>
 
 		<div class="container">
-			<section class="visual" style="display: none">
+			<section class="visual">
 				<ul class="visual__slider">
 					<li><a href="product_detail_0101.html">
 						<img class="pc-visual__slider--item" src="./images/pc_visual_slider_item_01.jpg" alt="">
@@ -130,16 +168,82 @@
 				<div class="visual__control">
 					<div class="visual__control__pager"></div>
 					<div class="visual__control__arrow">
-						<button class="visual__control__arrow--prev">이전</button>
-						<button class="visual__control__arrow--next">다음</button>
+						<span class="visual__control__arrow--prev"></span>
+						<span class="visual__control__arrow--next"></span>
 					</div>
 				</div>
 			</section>
 			<section class="main-best-product">
 				<h2 class="main-best-product__title">BEST 제품</h2>
 				<ul>
-					<li><a href="product_detail_0101.html">
-						
+					<li class="main-best-product__item main-best-product__item--01 on"><a href="product_detail_0101.html">
+						<span class="main-best-product__cover-box">
+							<span class="main-best-product__cover">
+								<p>청정한<br>우리집</p>
+								<b>정수기<br>BEST</b>
+							</span>
+							<span class="main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_01.png" alt="">
+							</span>
+						</span>
+						<span class="main-best-product__box">
+							<span class="mobile-main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_01.png" alt="">
+							</span>
+							<span class="main-best-product__info">
+								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="main-best-product__price">
+								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
+					</a></li>
+					<li class="main-best-product__item main-best-product__item--02"><a href="product_detail_0101.html">
+						<span class="main-best-product__cover-box">
+							<span class="main-best-product__cover">
+								<p>청정한<br>우리집</p>
+								<b>정수기<br>BEST</b>
+							</span>
+							<span class="main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_02.png" alt="">
+							</span>
+						</span>
+						<span class="main-best-product__box">
+							<span class="main-best-product__info">
+								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="main-best-product__price">
+								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
+					</a></li>
+					<li class="main-best-product__item main-best-product__item--03"><a href="product_detail_0101.html">
+						<span class="main-best-product__cover-box">
+							<span class="main-best-product__cover">
+								<p>살균부터<br>케어까지</p>
+								<b>비데<br>BEST</b>
+							</span>
+							<span class="main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_03.png" alt="">
+							</span>
+						</span>
+						<span class="main-best-product__box">
+							<span class="main-best-product__info">
+								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="main-best-product__price">
+								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
 					</a></li>
 				</ul>
 			</section>
