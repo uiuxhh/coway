@@ -48,9 +48,9 @@
 					$('.visual__slider li').eq(currentslide + 1).addClass('active-slide');
 				}
 			});
-			$('.main-best-product__item').mouseenter(function(){
+			$('.pc-main-best-product__item').mouseenter(function(){
 				if($(window).outerWidth()>1230){
-					$('.main-best-product__item').removeClass('on');
+					$('.pc-main-best-product__item').removeClass('on');
 					$(this).addClass('on');
 				}
 			});
@@ -59,9 +59,9 @@
 		$(window).resize(function(){
 			containerSizeCheck();
 
-			$('.main-best-product__item').mouseenter(function(){
+			$('.pc-main-best-product__item').mouseenter(function(){
 				if($(window).outerWidth()>1230){
-					$('.main-best-product__item').removeClass('on');
+					$('.pc-main-best-product__item').removeClass('on');
 					$(this).addClass('on');
 				}
 			});
@@ -173,80 +173,150 @@
 					</div>
 				</div>
 			</section>
-			<section class="main-best-product">
-				<h2 class="main-best-product__title">BEST 제품</h2>
+			<section class="pc-main-best-product">
+				<h2 class="pc-main-best-product__title">BEST 제품</h2>
 				<ul>
-					<li class="main-best-product__item main-best-product__item--01 on"><a href="product_detail_0101.html">
-						<span class="main-best-product__cover-box">
-							<span class="main-best-product__cover">
-								<p>청정한<br>우리집</p>
+					<li class="pc-main-best-product__item pc-main-best-product__item--01 on"><a href="product_detail_0101.html">
+						<span class="pc-main-best-product__cover-box">
+							<span class="pc-main-best-product__cover">
+								<p>맞춤<br>스타일</p>
 								<b>정수기<br>BEST</b>
 							</span>
-							<span class="main-best-product__thumbnail">
+							<span class="pc-main-best-product__thumbnail">
 								<img src="./images/product/main_best_thumbnail_01.png" alt="">
 							</span>
 						</span>
-						<span class="main-best-product__box">
-							<span class="mobile-main-best-product__thumbnail">
-								<img src="./images/product/main_best_thumbnail_01.png" alt="">
+						<span class="pc-main-best-product__box">
+							<span class="pc-main-best-product__info">
+								<span class="pc-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="pc-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
 							</span>
-							<span class="main-best-product__info">
-								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
-								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
-							</span>
-							<span class="main-best-product__price">
-								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
-								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
-								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							<span class="pc-main-best-product__price">
+								<span class="pc-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="pc-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="pc-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
 							</span>
 						</span>
 					</a></li>
-					<li class="main-best-product__item main-best-product__item--02"><a href="product_detail_0101.html">
-						<span class="main-best-product__cover-box">
-							<span class="main-best-product__cover">
+					<li class="pc-main-best-product__item pc-main-best-product__item--02"><a href="product_detail_0101.html">
+						<span class="pc-main-best-product__cover-box">
+							<span class="pc-main-best-product__cover">
 								<p>청정한<br>우리집</p>
-								<b>정수기<br>BEST</b>
+								<b>청정기<br>BEST</b>
 							</span>
-							<span class="main-best-product__thumbnail">
+							<span class="pc-main-best-product__thumbnail">
 								<img src="./images/product/main_best_thumbnail_02.png" alt="">
 							</span>
 						</span>
-						<span class="main-best-product__box">
-							<span class="main-best-product__info">
-								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
-								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+						<span class="pc-main-best-product__box">
+							<span class="pc-main-best-product__info">
+								<span class="pc-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="pc-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
 							</span>
-							<span class="main-best-product__price">
-								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
-								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
-								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							<span class="pc-main-best-product__price">
+								<span class="pc-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="pc-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="pc-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
 							</span>
 						</span>
 					</a></li>
-					<li class="main-best-product__item main-best-product__item--03"><a href="product_detail_0101.html">
-						<span class="main-best-product__cover-box">
-							<span class="main-best-product__cover">
+					<li class="pc-main-best-product__item pc-main-best-product__item--03"><a href="product_detail_0101.html">
+						<span class="pc-main-best-product__cover-box">
+							<span class="pc-main-best-product__cover">
 								<p>살균부터<br>케어까지</p>
 								<b>비데<br>BEST</b>
 							</span>
-							<span class="main-best-product__thumbnail">
+							<span class="pc-main-best-product__thumbnail">
 								<img src="./images/product/main_best_thumbnail_03.png" alt="">
 							</span>
 						</span>
-						<span class="main-best-product__box">
-							<span class="main-best-product__info">
-								<span class="main-best-product__info--description">프리미엄 디자인 정수기</span>
-								<span class="main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+						<span class="pc-main-best-product__box">
+							<span class="pc-main-best-product__info">
+								<span class="pc-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="pc-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
 							</span>
-							<span class="main-best-product__price">
-								<span class="main-best-product__price--original">월 <span class="value">31,900</span>원</span>
-								<span class="main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
-								<span class="main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							<span class="pc-main-best-product__price">
+								<span class="pc-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="pc-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="pc-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
 							</span>
 						</span>
 					</a></li>
 				</ul>
 			</section>
+
+			<section class="mobile-main-best-product">
+				<h2 class="mobile-main-best-product__title">BEST 제품</h2>
+				<ul>
+					<li class="mobile-main-best-product__item mobile-main-best-product__item--01"><a href="product_detail_0101.html">
+						<span class="mobile-main-best-product__cover-box">
+							<span class="mobile-main-best-product__cover">
+								<p>맞춤<br>스타일</p>
+								<b>정수기<br>BEST</b>
+							</span>
+							<span class="mobile-main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_01.png" alt="">
+							</span>
+						</span>
+						<span class="mobile-main-best-product__box">
+							<span class="mobile-main-best-product__info">
+								<span class="mobile-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="mobile-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="mobile-main-best-product__price">
+								<span class="mobile-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="mobile-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="mobile-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
+					</a></li>
+					<li class="mobile-main-best-product__item mobile-main-best-product__item--02"><a href="product_detail_0101.html">
+						<span class="mobile-main-best-product__cover-box">
+							<span class="mobile-main-best-product__cover">
+								<p>청정한<br>우리집</p>
+								<b>청정기<br>BEST</b>
+							</span>
+							<span class="mobile-main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_02.png" alt="">
+							</span>
+						</span>
+						<span class="mobile-main-best-product__box">
+							<span class="mobile-main-best-product__info">
+								<span class="mobile-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="mobile-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="mobile-main-best-product__price">
+								<span class="mobile-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="mobile-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="mobile-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
+					</a></li>
+					<li class="mobile-main-best-product__item mobile-main-best-product__item--03"><a href="product_detail_0101.html">
+						<span class="mobile-main-best-product__cover-box">
+							<span class="mobile-main-best-product__cover">
+								<p>살균부터<br>케어까지</p>
+								<b>비데<br>BEST</b>
+							</span>
+							<span class="pc-main-best-product__thumbnail">
+								<img src="./images/product/main_best_thumbnail_03.png" alt="">
+							</span>
+						</span>
+						<span class="pc-main-best-product__box">
+							<span class="pc-main-best-product__info">
+								<span class="pc-main-best-product__info--description">프리미엄 디자인 정수기</span>
+								<span class="pc-main-best-product__info--title">코웨이 노블정수기 냉온정수기</span>
+							</span>
+							<span class="pc-main-best-product__price">
+								<span class="pc-main-best-product__price--original">월 <span class="value">31,900</span>원</span>
+								<span class="pc-main-best-product__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+								<span class="pc-main-best-product__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+							</span>
+						</span>
+					</a></li>
+				</ul>
+			</section>
+
 			<section class="main-banner">
 				<ul>
 					<li><a href="">
@@ -269,19 +339,19 @@
 					<li><a href="product_detail_0101.html">
 						<span class="product-list__thumbnail-wrap">
 							<span class="product-list__sticker-wrap--top">
-								<span class="sticker-item--hotprice"></span>
-								<span class="sticker-item--exemption"></span>
-								<span class="sticker-item--refurb"></span>
-								<span class="sticker-item--groupdiscount"></span>
+								<img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg">
+								<img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg">
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg">
 							</span>
 							<span class="product-list__sticker-wrap--bottom">
-								<span class="sticker-item--coldwater"></span>
-								<span class="sticker-item--hotwater"></span>
-								<span class="sticker-item--purewater"></span>
-								<span class="sticker-item--ice"></span>
-								<span class="sticker-item--tansan"></span>
+								<img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png">
+								<img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png">
+								<img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png">
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
 							</span>
-							<img src="./images/" alt="" class="product-list__thumbnail">
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
 						</span>
 						<span class="product-list__info">
 							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
@@ -296,19 +366,181 @@
 					<li><a href="product_detail_0101.html">
 						<span class="product-list__thumbnail-wrap">
 							<span class="product-list__sticker-wrap--top">
-								<span class="sticker-item--hotprice"></span>
-								<!-- <span class="sticker-item--exemption"></span> -->
-								<!-- <span class="sticker-item--refurb"></span> -->
-								<!-- <span class="sticker-item--groupdiscount"></span> -->
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
 							</span>
 							<span class="product-list__sticker-wrap--bottom">
-								<span class="sticker-item--coldwater"></span>
-								<span class="sticker-item--hotwater"></span>
-								<span class="sticker-item--purewater"></span>
-								<!-- <span class="sticker-item--ice"></span> -->
-								<!-- <span class="sticker-item--tansan"></span> -->
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
 							</span>
-							<img src="./images/" alt="" class="product-list__thumbnail">
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg">
+								<img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg">
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg">
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png">
+								<img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png">
+								<img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png">
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
+						</span>
+						<span class="product-list__info">
+							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
+							<span class="product-list__info--title">코웨이 노블정수기 냉온정수기</span>
+						</span>
+						<span class="product-list__price">
+							<span class="product-list__price--original">월 <span class="value">31,900</span>원</span>
+							<span class="product-list__price--promotion">프로모션가 월 <span class="value">27,900</span>원</span>
+							<span class="product-list__price--card">제휴카드 월 <span class="value">16,900</span>원</span>
+						</span>
+					</a></li>
+					<li><a href="product_detail_0101.html">
+						<span class="product-list__thumbnail-wrap">
+							<span class="product-list__sticker-wrap--top">
+								<!-- <img class="sticker-item sticker-item--hotprice" src="./images/sticker_item_hotprice.jpg"> -->
+								<!-- <img class="sticker-item sticker-item--exemption" src="./images/sticker_item_exemption.jpg"> -->
+								<img class="sticker-item sticker-item--refurb" src="./images/sticker_item_refurb.jpg">
+								<!-- <img class="sticker-item sticker-item--groupdiscount" src="./images/sticker_item_groupdiscount.jpg"> -->
+							</span>
+							<span class="product-list__sticker-wrap--bottom">
+								<!-- <img class="sticker-item sticker-item--coldwater" src="./images/sticker_item_coldwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--hotwater" src="./images/sticker_item_hotwater.png"> -->
+								<!-- <img class="sticker-item sticker-item--purewater" src="./images/sticker_item_purewater.png"> -->
+								<img class="sticker-item sticker-item--ice" src="./images/sticker_item_ice.png">
+								<img class="sticker-item sticker-item--tansan" src="./images/sticker_item_tansan.png">
+							</span>
+							<img src="./images/product/product_thumbnail_sample_01.png" alt="" class="product-list__thumbnail">
 						</span>
 						<span class="product-list__info">
 							<span class="product-list__info--description">프리미엄 디자인 정수기</span>
