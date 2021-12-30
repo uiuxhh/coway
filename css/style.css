@@ -1,5 +1,7 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {font-family: 'GmarketSansMedium';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight: normal;font-style: normal;
+}
 
 /*RESET*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;box-sizing: border-box;}
@@ -55,7 +57,7 @@ li.mobile-drawer__call{margin-top: 30px;border-top: 0;}
 .mobile-drawer__call span{font-size: 2rem;font-weight: 600;margin-left: 20px;line-height: 50px;display: inline-block;letter-spacing: 1px;}
 
 
-
+.fixedbar-wrap{position: fixed;}
 
 
 footer{background-color:#2ea3e1;}
@@ -124,7 +126,7 @@ footer{background-color:#2ea3e1;}
 
 
 
-.main-recommend-product{position: relative;max-width: 1200px;margin: 0 auto;}
+.main-recommend-product{position: relative;max-width: 1200px;margin: 0 auto;padding: 0 16px;}
 .main-recommend-product__title{text-align: center;font-size: 2.4rem;font-weight: 600;line-height: 1.4;margin-bottom: 0}
 
 
@@ -170,17 +172,28 @@ footer{background-color:#2ea3e1;}
 
 
 
+.sub-product{position: relative;padding: 0 16px;max-width: 1200px;margin: 0 auto;}
+
+.product-list--global li.product-list__best-item{background-color: red;width:48.6%;}
+.product-list--global li.product-list__best-item .product-list__thumbnail-wrap{padding-bottom: 47.12%;}
+.product-list--global li.product-list__best-item .product-list__thumbnail{width: auto;}
+.product-list--global li.product-list__best-item .product-list__sticker-wrap--top{width: 16.49%;}
+.product-list--global li.product-list__best-item .product-list__sticker-wrap--bottom{width: 9.16%;}
+
+.product-list--global.best-item li:nth-child(4n-3){margin-left: 2.8%;clear: none;}
+.product-list--global.best-item li:first-child{margin-left: 0}
+.product-list--global.best-item li:nth-child(4n-4){margin-left: inherit;clear: none;}
 
 
-.sub-top{}
-.sub-top__inner{}
-.sub-top__title{}
-.sub-top__description{}
-.sub-top__tab{margin: 0 auto;max-width: 600px;border-radius: 30px;}
+.sub-top{position: relative;background:url(../images/sub_top_bg_01.jpg) 0 0 no-repeat;background-size: cover;}
+.sub-top__inner{position: relative;padding: 38px 0 20px 0;}
+.sub-top__title{font-size: 3rem;color: #fff;text-align: center;line-height: 1.4;font-family: 'GmarketSansMedium';font-weight: 500;}
+.sub-top__description{font-size: 1.6rem;color: #fff;text-align: center;line-height: 1;position: relative;transform: rotate(0.03deg);}
+.sub-top__tab{margin: 0 auto 70px auto;max-width: 600px;border-radius: 50px;overflow: hidden;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.04);background-color: #fff;position: relative;bottom: -25px;}
 .sub-top__tab:after{content: '';display: block;clear: both;}
 .sub-top__tab li{display: inline-block;float: left;}
+.sub-top__tab li a{display: block;line-height: 50px;text-align: center;font-size: 1.6rem;position: relative;transform: rotate(0.03deg);font-weight: 600;}
 .sub-top__tab li.on a{background-color: #eee;}
-.sub-top__tab li a{display: block;line-height: 50px;}
 .sub-top__tab--03 li{width: 33.33%;}
 .sub-top__tab--03 li:nth-child(2){width: 33.34%;}
 
@@ -267,6 +280,7 @@ footer{background-color:#2ea3e1;}
 
 
 
+	
 
 
 /*tablet*/
@@ -276,17 +290,24 @@ footer{background-color:#2ea3e1;}
 	.header__gnb{left: 245px;}
 	.header__gnb__depth1 li{margin-right: 5vw;}
 
-	.main-recommend-product{padding: 0 16px;}
-	.product-list--global li{width: 48.5%;margin-left: 3%;margin-bottom: 30px;}
-	.product-list--global li:nth-child(4n-3){margin-left: 3%;clear: none}
-	.product-list--global li:nth-child(2n-1){margin-left: 0;clear: both}
+
+	
 
 	.footer__inner{padding: 37px 16px;}
+
+	.sub-top__tab{width: 80%;}
+
 
 }
 
 @media (max-width: 1000px){
 	.pc-topmenu{display: none;}
+
+	.sub-top__tab{margin-bottom: 50px;}
+
+	.product-list--global li{width: 48.5%;margin-left: 3%;margin-bottom: 30px;}
+	.product-list--global li:nth-child(4n-3){margin-left: 3%;clear: none}
+	.product-list--global li:nth-child(2n-1){margin-left: 0;clear: both}
 }
 
 /*mobile*/
@@ -322,4 +343,7 @@ footer{background-color:#2ea3e1;}
 
 	.main-banner li{width: auto;display: block;float: none;}
 	.main-banner li:nth-child(2){width: auto}
+
+	.sub-top__inner{padding: 25px 0 10px 0;}
+	.sub-top__tab li a{line-height: 40px;}
 }
